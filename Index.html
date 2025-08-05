@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemons AI - Yieldly</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Arial', sans-serif; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white; 
+            min-height: 100vh;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        header { text-align: center; padding: 50px 0; }
+        h1 { font-size: 3rem; margin-bottom: 20px; }
+        .hero { text-align: center; padding: 80px 20px; }
+        .btn { 
+            display: inline-block; 
+            padding: 15px 30px; 
+            background: #ff6b6b; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 25px; 
+            margin: 10px;
+            transition: all 0.3s;
+        }
+        .btn:hover { background: #ee5a52; transform: translateY(-2px); }
+        .section { padding: 60px 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+        .card { 
+            background: rgba(255,255,255,0.1); 
+            padding: 30px; 
+            border-radius: 15px; 
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+        footer { text-align: center; padding: 40px; background: rgba(0,0,0,0.3); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍋 Lemons AI</h1>
+            <p>Transforming complexity into clarity</p>
+        </header>
+
+        <section class="hero">
+            <h2>Unlock Your Potential</h2>
+            <p>We transform complexity into clarity—turning tangled systems into elegant outcomes that unlock measurable value.</p>
+            <a href="#contact" class="btn">Get Started</a>
+            <a href="#services" class="btn">Our Services</a>
+        </section>
+
+        <section class="section" id="services">
+            <h2>Our Services</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>🎯 Strategic Design</h3>
+                    <p>Transform complex challenges into clear, actionable strategies.</p>
+                </div>
+                <div class="card">
+                    <h3>📊 Data Analytics</h3>
+                    <p>Turn raw data into valuable insights that drive growth.</p>
+                </div>
+                <div class="card">
+                    <h3>⚙️ Engineering</h3>
+                    <p>Build robust, scalable solutions for your business.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <h2>Contact Us</h2>
+            <div style="max-width: 600px; margin: 0 auto;">
+                <form name="contact" method="POST" data-netlify="true" style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 15px;">
+                    <input type="hidden" name="form-name" value="contact">
+                    <div style="margin-bottom: 20px;">
+                        <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 15px; border: none; border-radius: 8px; background: rgba(255,255,255,0.2); color: white;">
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 15px; border: none; border-radius: 8px; background: rgba(255,255,255,0.2); color: white;">
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <textarea name="message" placeholder="Your Message" rows="5" style="width: 100%; padding: 15px; border: none; border-radius: 8px; background: rgba(255,255,255,0.2); color: white; resize: vertical;"></textarea>
+                    </div>
+                    <button type="submit" style="width: 100%; padding: 15px; background: #ff6b6b; border: none; border-radius: 8px; color: white; font-size: 16px; cursor: pointer;">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Lemons AI. All rights reserved.</p>
+            <p>📧 hello@lemons-ai.com | 📞 (555) 123-4567</p>
+        </footer>
+    </div>
+</body>
+</html
